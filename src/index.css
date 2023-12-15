@@ -1,0 +1,85 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header__menu-button {
+    cursor: pointer;
+  }
+  
+  .header__nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header__nav_closed {
+    display: none;
+  }
+  
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .overlay {
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    z-index: 1;
+    transition: visibility 0.3s, opacity 0.3 linear;
+  }
+
+  .overlay_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+  .card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .popup_closed {
+    display: none;
+  }
+  
+  .popup__button {
+    cursor: pointer;
+  }
+  .popup__content {
+    background-color: cornflowerblue;
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
